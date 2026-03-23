@@ -1,5 +1,5 @@
 ---
-title: About
+title: Progetto
 layout: about
 permalink: /about.html
 ---
@@ -21,7 +21,7 @@ Il progetto è stato realizzato nell'ambito del corso di **Informatica Umanistic
 - Costruire una collezione digitale strutturata di oggetti delle arti decorative medievali italiane
 - Rendere accessibili e navigabili i metadati descrittivi degli oggetti museali
 - Sperimentare i principi dell'architettura dell'informazione applicata al patrimonio culturale
-- Pubblicare la risorsa sul Web tramite GitHub Pages in formato bilingue (italiano/inglese)
+- Pubblicare la risorsa sul Web tramite GitHub Pages
 
 ---
 
@@ -31,7 +31,7 @@ Il progetto ha seguito le fasi classiche del **project management plan**: brief,
 
 Per ogni oggetto è stata definita una struttura di metadati uniforme, derivata dagli standard catalografici museali italiani (ICCD — Istituto Centrale per il Catalogo e la Documentazione) e adattata al formato richiesto da CollectionBuilder-GH. I campi includono: denominazione, datazione, tipologia, materiali e tecnica, dimensioni, museo di conservazione, numero di inventario, provenienza e fonti bibliografiche.
 
-La scelta di CollectionBuilder-GH come framework di pubblicazione risponde all'obiettivo di massimizzare l'accessibilità e l'interoperabilità della risorsa: il sito è statico, pubblicato su GitHub Pages, e i metadati sono scaricabili in formato CSV e JSON dalla sezione [Data]({{ '/data.html' | relative_url }}).
+La scelta di CollectionBuilder-GH come framework di pubblicazione risponde all'obiettivo di massimizzare l'accessibilità e l'interoperabilità della risorsa: il sito è statico, pubblicato su GitHub Pages, e i metadati sono scaricabili in formato CSV e JSON dalla sezione [Dati]({{ '/data.html' | relative_url }}).
 
 ---
 
@@ -78,7 +78,7 @@ Ogni oggetto nella collezione è descritto attraverso i seguenti campi, conformi
 | `periodo` | Periodo storico (Alto/Basso Medioevo) |
 | `rights` | Informazioni sul copyright |
 
-I metadati sono disponibili per il download nella sezione [Data]({{ '/data.html' | relative_url }}) in formato CSV e JSON.
+I metadati sono disponibili per il download nella sezione [Dati]({{ '/data.html' | relative_url }}) in formato CSV e JSON.
 
 ---
 
