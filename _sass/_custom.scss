@@ -1,4 +1,66 @@
-/* 
-    Put your custom SCSS here! 
-    This allows you to override any CollectionBuilder or Bootstrap CSS without modifying the base theme files directly.
-*/
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 11pt;
+  color: #1a1a1a;
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+  font-family: 'EB Garamond', serif;
+  font-weight: 400;
+  color: #000;
+}
+
+h2 {
+  font-size: 22pt;
+  border-bottom: 1px solid #e8e0cc;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 9pt;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+$gold: #9a7c3a;
+
+a { color: $gold; }
+a:hover { color: darken($gold, 10%); }
+
+.btn-primary {
+  background-color: $gold;
+  border-color: $gold;
+  &:hover { background-color: darken($gold, 10%); }
+}
+
+.navbar {
+  border-bottom: 2px solid $gold;
+}
+
+.nav-link:hover { color: $gold !important; }
+
+th {
+  background: #f8f4ec;
+  color: #7a5c20;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 8.5pt;
+  border-bottom: 2px solid #e8e0cc;
+}
+
+td { border-bottom: 1px solid #f0ebe0; }
+
+.badge, .tag {
+  border: 1px solid #e0d8c8;
+  background: #fdf9f2;
+  color: #7a5c20;
+  border-radius: 20px;
+}
+
+.card {
+  border-color: #e8e0cc;
+  &:hover { border-color: $gold; }
+}
