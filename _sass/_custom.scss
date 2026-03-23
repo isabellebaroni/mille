@@ -137,6 +137,13 @@ button.btn {
   color: var(--cb-light) !important;
 }
 
+.about-contents table {
+  display: block;
+  width: min(100%, 650px);
+  margin: 1.5rem auto 2rem;
+  overflow-x: auto;
+}
+
 .card {
   border: 1px solid var(--cb-border) !important;
   border-radius: 3px !important;
