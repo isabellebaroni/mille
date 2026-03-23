@@ -54,10 +54,10 @@
     });
     /* add base map switcher */
     var baseMaps = {
-        "Esri World StreetMap": Esri_WorldStreetMap,
-        "Esri National Geo": Esri_NatGeoWorldMap,
-        "Esri Imagery": Esri_WorldImagery,
-        "Open Street Map": OpenStreetMap_Mapnik
+        "Esri stradale": Esri_WorldStreetMap,
+        "Esri National Geographic": Esri_NatGeoWorldMap,
+        "Esri immagini": Esri_WorldImagery,
+        "OpenStreetMap": OpenStreetMap_Mapnik
     };
     L.control.layers(baseMaps).addTo(map);
     /* load base map */
@@ -66,8 +66,8 @@
     {% if site.data.theme.map-search == true %}
     /* add leaflet-fusesearch */
     var options = {
-        title: 'Search Map Items',
-        locationholder: 'Search map items...',
+        title: 'Cerca nella mappa',
+        locationholder: 'Cerca nella mappa...',
         threshold: {{ site.data.theme.map-search-fuzziness | default: 0.35 }},
         showResultFct: function(feature, container) {
             var result = `<strong>${feature.properties.title}</strong><br>`;
@@ -94,14 +94,14 @@
             var childCount = cluster.getChildCount();
             var csize;
             if (childCount < 10) {
-                csize = 'small';
+                csize = 'piccolo';
             } else if (childCount < 100) {
-                csize = 'medium';
+                csize = 'medio';
             } else {
-                csize = 'large';
+                csize = 'grande';
             }
             var c = ' marker-cluster-' + csize;
-            return new L.DivIcon({ html: '<div><span class="visually-hidden">' + csize +' cluster of </span><span>' + childCount + '</span><span class="visually-hidden"> items</span></div>', className: 'marker-cluster' + c, iconSize: new L.Point(40, 40) });
+            return new L.DivIcon({ html: '<div><span class="visually-hidden">Cluster ' + csize +' di </span><span>' + childCount + '</span><span class="visually-hidden"> elementi</span></div>', className: 'marker-cluster' + c, iconSize: new L.Point(40, 40) });
         }
         {% if site.data.theme.map-search == true %}, removeOutsideVisibleBounds: false{% endif %} 
     });{% endif %}
@@ -135,7 +135,7 @@
         /* create popup content */
         var popupTemplate = '<h2 class="h4"><a class="text-dark" href="' + itemHref + '">' +
             feature.properties.title + '</a></h2><div class="text-center"><a href="' + itemHref + 
-            '" ><img class="map-thumb img-thumb" src="' +  thumbSrc + '" alt="item thumbnail"></a></div><p>';
+            '" ><img class="map-thumb img-thumb" src="' +  thumbSrc + '" alt="miniatura dell\'oggetto"></a></div><p>';
         /* add metadata fields */
         {% for f in fields %}{% if f.display_name %}
         if (feature.properties[{{ f.field | jsonify }}]) {
@@ -143,7 +143,7 @@
         }
         {% endif %}{% endfor %}
         /* add object link button to popup */
-        popupTemplate += '</p><div class="text-center"><a class="btn btn-light" href="' + itemHref + '" >View Item</a></div>';
+        popupTemplate += '</p><div class="text-center"><a class="btn btn-light" href="' + itemHref + '" >Vedi scheda</a></div>';
         /* add object popup to map layer */
         layer.bindPopup(popupTemplate);
     }
