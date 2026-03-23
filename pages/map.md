@@ -1,5 +1,5 @@
 ---
-title: Map
+title: Mappa
 layout: map
 permalink: /map.html
 # see _data/config-map.csv for display options
