@@ -5,22 +5,22 @@ custom-foot: js/lunr-js.html
 ---
 {%- assign fields = site.data.config-search | where: 'index',true | map: 'field' -%}
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-outline-primary float-end" data-bs-toggle="modal" data-bs-target="#operators">Search Options</button>
+<button type="button" class="btn btn-outline-primary float-end" data-bs-toggle="modal" data-bs-target="#operators">Opzioni di ricerca</button>
 <!-- Modal -->
 <div class="modal fade" id="operators" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="modalLabel">Lunr Search Options</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h5 class="modal-title" id="modalLabel">Opzioni di ricerca Lunr</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi"></button>
             </div>
             <div class="modal-body">
-                <p>These advanced options can be added to your query in the search box to refine your results:</p> 
+                <p>Puoi aggiungere queste opzioni avanzate alla query nel campo di ricerca per affinare i risultati:</p> 
                 <ul>
-                    <li>Search a specific field: use the field name, colon, then your query, e.g. <code>title:foo</code>, <code>date:1911</code>, <code>subject:tree</code>. In this collection you can use {{ fields | join: ", " }}.</li>
-                    <li>Wildcards: add <code>*</code> to match any character(s), e.g. <code>foo*</code>, <code>*oo</code>. This is helpful for using a root to find words with all related endings.</li>
-                    <li>Fuzzy match: add <code>~</code> plus a number at the end of your query to specify a higher level of fuzziness in search, e.g. <code>foo~1</code>. This can help with misspellings.</li>
-                    <li>Boost term: add <code>^</code> plus a number to boost the relevance of a term in your query, e.g. <code>foo^10</code>. This can help reduce clutter of unrelated results if one of your terms is most important.</li>
+                    <li>Ricerca in un campo specifico: usa il nome del campo, i due punti e poi la query, ad esempio <code>title:foo</code>, <code>date:1911</code>, <code>subject:tree</code>. In questa collezione puoi usare {{ fields | join: ", " }}.</li>
+                    <li>Caratteri jolly: aggiungi <code>*</code> per corrispondere a uno o più caratteri, ad esempio <code>foo*</code>, <code>*oo</code>. È utile per cercare parole con la stessa radice.</li>
+                    <li>Corrispondenza approssimativa: aggiungi <code>~</code> più un numero alla fine della query per aumentare il grado di approssimazione, ad esempio <code>foo~1</code>. Può aiutare in caso di errori di ortografia.</li>
+                    <li>Peso del termine: aggiungi <code>^</code> più un numero per aumentare la rilevanza di un termine nella query, ad esempio <code>foo^10</code>. È utile per ridurre il rumore quando un termine è più importante degli altri.</li>
                 </ul>
             </div>
         </div>
@@ -32,9 +32,9 @@ custom-foot: js/lunr-js.html
 <div class="ms-3 mt-3">
     <form class="" role="search" id="lunrSearch" onsubmit="lunr_search(); return false;">
         <div class="input-group input-group-lg">
-            <input id="lunrSearchBox" class="form-control " type="text" placeholder="Enter your search term..." >
+            <input id="lunrSearchBox" class="form-control " type="text" placeholder="Inserisci il termine da cercare..." >
             <button class="btn btn-success" type="submit">
-                Search
+                Cerca
             </button>
         </div>
     </form>
@@ -43,5 +43,5 @@ custom-foot: js/lunr-js.html
 </div>
 
 <div class="mt-3">
-    <p class="text-muted">Fuzzy search powered by <a href="https://lunrjs.com/">Lunr.js</a>. <em>May take a second to load large collections!</em></p>
+    <p class="text-muted">Ricerca fuzzy basata su <a href="https://lunrjs.com/">Lunr.js</a>. <em>Le collezioni più grandi possono richiedere qualche secondo per caricarsi.</em></p>
 </div>
