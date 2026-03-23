@@ -1,0 +1,46 @@
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 11pt;
+  color: #1a1a1a;
+  line-height: 1.7;
+}
+
+h1, h2, h3, .navbar-brand {
+  font-family: 'EB Garamond', serif;
+  font-weight: 400;
+  color: #000;
+}
+
+h2 {
+  font-size: 22pt;
+  border-bottom: 1px solid #e8e0cc;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+a, .btn-primary, .nav-link:hover {
+  color: #9a7c3a;
+}
+
+.btn-primary, .btn-outline-primary {
+  border-color: #9a7c3a;
+  color: #9a7c3a;
+}
+
+.btn-primary:hover {
+  background: #9a7c3a;
+  color: #fff;
+}
+
+th {
+  background: #f8f4ec;
+  color: #7a5c20;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 8.5pt;
+  border-bottom: 2px solid #e8e0cc;
+}
+
+td {
+  border-bottom: 1px solid #f0ebe0;
+}
