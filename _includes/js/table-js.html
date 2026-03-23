@@ -11,10 +11,27 @@ $(document).ready( function () {
         "deferRender": true,
         // enable pagination 
         "paging": true,
-        "lengthMenu": [[ 25, 50, 100, -1], [ 25, 50, 100, "All"]],
+        "lengthMenu": [[ 25, 50, 100, -1], [ 25, 50, 100, "Tutti"]],
         // add download features
         dom: 'B<"row mt-2"<"col-md-6"l><"col-md-6"f>>t<"row"<"col-md-6"i><"col-md-6"p>>', 
-        buttons: [ 'excelHtml5', 'csvHtml5' ],
+        buttons: [ { extend: 'excelHtml5', text: 'Excel' }, { extend: 'csvHtml5', text: 'CSV' } ],
+        language: {
+            processing: "Elaborazione...",
+            search: "Cerca:",
+            lengthMenu: "Mostra _MENU_ elementi",
+            info: "Visualizzazione di _START_ - _END_ di _TOTAL_ elementi",
+            infoEmpty: "Visualizzazione di 0 - 0 di 0 elementi",
+            infoFiltered: "(filtrati da _MAX_ elementi totali)",
+            loadingRecords: "Caricamento...",
+            zeroRecords: "Nessun risultato trovato",
+            emptyTable: "Nessun dato disponibile nella tabella",
+            paginate: {
+                first: "Prima",
+                previous: "Precedente",
+                next: "Successiva",
+                last: "Ultima"
+            }
+        },
         // set up the columns from the json
         columns: [ {% for i in (0..fcount) %}{ data: '{{ i }}' }{% unless forloop.last %},{% endunless %}{% endfor %} ],
         columnDefs: [ 
