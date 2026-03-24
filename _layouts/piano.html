@@ -1,0 +1,362 @@
+---
+layout: default
+---
+<div class="project-plan-page">
+  <button class="project-plan-print" onclick="window.print()">Stampa / Salva PDF</button>
+
+  <div class="project-plan-shell">
+    <header class="project-plan-cover">
+      <p class="project-plan-cover-label">Piano di Progetto · Informatica Umanistica · Università di Bologna</p>
+      <h1 class="project-plan-title">M<span>ille</span></h1>
+      <p class="project-plan-subtitle">Biblioteca digitale di arti decorative medievali italiane</p>
+      <div class="project-plan-meta">
+        <div><span>Tipologia di risorsa</span>Biblioteca digitale di oggetti museali</div>
+        <div><span>Dominio</span>Patrimonio culturale — musei</div>
+        <div><span>Framework</span>CollectionBuilder-GH</div>
+        <div><span>Hosting</span>GitHub Pages</div>
+        <div><span>Lingua</span>Italiano</div>
+        <div><span>Pubblico</span>Studenti, appassionati, ricercatori</div>
+        <div><span>Oggetti catalogati</span>4 oggetti da 4 musei italiani</div>
+        <div><span>Anno accademico</span>2025–2026</div>
+      </div>
+    </header>
+
+    <section>
+      <p class="project-plan-section-number">01</p>
+      <h2>Brief</h2>
+      <p><em>Mille</em> è una biblioteca digitale dedicata alla documentazione e alla valorizzazione delle arti decorative del Medioevo italiano. Il progetto raccoglie oggetti museali — gioielli, tessuti, smalti, vetri soffiati — conservati presso musei e istituzioni culturali italiane, descrivendoli attraverso schede strutturate con metadati uniformi e interoperabili.</p>
+      <p>Il nome <em>Mille</em> evoca il primo millennio della cultura europea e il Medioevo come periodo di straordinaria produzione artigianale e artistica, spesso sottorappresentato rispetto al Rinascimento nella divulgazione digitale. La biblioteca vuole restituire visibilità a questi oggetti, rendendoli accessibili a un pubblico ampio attraverso un'interfaccia digitale sobria e navigabile, con funzionalità di mappa geografica, timeline cronologica e navigazione per soggetto e tipologia.</p>
+      <p>Il progetto è realizzato nell'ambito del corso di Informatica Umanistica (Università di Bologna) e adotta <strong>CollectionBuilder-GH</strong> come framework di pubblicazione, in linea con i principi di apertura, interoperabilità e preservazione digitale discussi durante il corso.</p>
+
+      <h3>Obiettivi principali</h3>
+      <ul>
+        <li>Costruire una collezione digitale strutturata di oggetti delle arti decorative medievali italiane con metadati conformi agli standard catalografici ICCD</li>
+        <li>Rendere accessibili e navigabili gli oggetti attraverso filtri per soggetto, tipologia, periodo e localizzazione geografica</li>
+        <li>Sperimentare i principi dell'architettura dell'informazione e della metadatazione applicati al patrimonio culturale museale</li>
+        <li>Pubblicare la risorsa su GitHub Pages garantendo accesso libero, versionamento e longevità</li>
+      </ul>
+    </section>
+
+    <section>
+      <p class="project-plan-section-number">02</p>
+      <h2>Benchmark</h2>
+      <p>L'analisi delle risorse esistenti nel dominio delle biblioteche digitali museali ha permesso di identificare i principali modelli di riferimento e di posizionare il progetto rispetto al panorama esistente.</p>
+
+      <div class="project-plan-grid project-plan-grid-2">
+        <article class="project-plan-card">
+          <p class="project-plan-card-kicker">Aggregatore europeo</p>
+          <h3>Europeana</h3>
+          <p>Vastità della collezione, metadati strutturati, open access, API aperta.</p>
+          <p class="project-plan-card-note">Limite: interfaccia generica, non focalizzata sul Medioevo italiano né sulle arti decorative.</p>
+        </article>
+        <article class="project-plan-card">
+          <p class="project-plan-card-kicker">Piattaforma multimediale</p>
+          <h3>Google Arts &amp; Culture</h3>
+          <p>Alta qualità visiva, tour virtuali, ampia copertura.</p>
+          <p class="project-plan-card-note">Limite: superficialità sul piano dei metadati e dati non scaricabili.</p>
+        </article>
+        <article class="project-plan-card">
+          <p class="project-plan-card-kicker">Catalogo istituzionale</p>
+          <h3>Catalogo Generale dei Beni Culturali (MiC)</h3>
+          <p>Dati ufficiali ICCD, copertura nazionale capillare.</p>
+          <p class="project-plan-card-note">Limite: interfaccia datata, usabilità debole, assenza di mappa e timeline interattive.</p>
+        </article>
+        <article class="project-plan-card">
+          <p class="project-plan-card-kicker">Database museale</p>
+          <h3>The Met Collection</h3>
+          <p>Metadati ricchi, immagini ad alta risoluzione, API aperta, open access.</p>
+          <p class="project-plan-card-note">Limite: collezione internazionale, non focalizzata sul patrimonio italiano.</p>
+        </article>
+        <article class="project-plan-card">
+          <p class="project-plan-card-kicker">Template di biblioteca digitale</p>
+          <h3>CollectionBuilder Demo</h3>
+          <p>Open source, GitHub Pages, metadati scaricabili, mappa e timeline integrate.</p>
+          <p class="project-plan-card-note">Limite: è solo un template. <em>Mille</em> lo adotta e lo popola con dati originali.</p>
+        </article>
+      </div>
+
+      <p><em>Mille</em> si distingue per la focalizzazione tematica sulle arti decorative medievali italiane, per la qualità e la struttura dei metadati, e per l'adozione di CollectionBuilder-GH come framework che permette di rendere i dati aperti e scaricabili in CSV e JSON.</p>
+    </section>
+
+    <section>
+      <p class="project-plan-section-number">03</p>
+      <h2>Documento di Progetto</h2>
+
+      <h3>Dominio e tipologia</h3>
+      <p>Il progetto si colloca nel dominio del <strong>patrimonio culturale museale</strong>. La tipologia scelta è quella della <strong>biblioteca digitale di oggetti museali</strong>: una raccolta strutturata di oggetti con relative descrizioni, organizzata secondo criteri tematici e navigabile attraverso filtri, faccette, mappa geografica e cronologia.</p>
+
+      <h3>Oggetti della collezione</h3>
+      <div class="project-plan-grid project-plan-grid-2">
+        <article class="project-plan-card">
+          <h3>Croce di Desiderio</h3>
+          <dl class="project-plan-facts">
+            <div><dt>Datazione</dt><dd>IX sec. (800–825 ca.)</dd></div>
+            <div><dt>Tipologia</dt><dd>Oreficeria gemmata</dd></div>
+            <div><dt>Museo</dt><dd>Museo di Santa Giulia, Brescia</dd></div>
+          </dl>
+        </article>
+        <article class="project-plan-card">
+          <h3>Paliotto di Sant'Ambrogio</h3>
+          <dl class="project-plan-facts">
+            <div><dt>Datazione</dt><dd>IX sec. (824–859 ca.)</dd></div>
+            <div><dt>Tipologia</dt><dd>Altare in smalto cloisonné</dd></div>
+            <div><dt>Museo</dt><dd>Basilica di Sant'Ambrogio, Milano</dd></div>
+          </dl>
+        </article>
+        <article class="project-plan-card">
+          <h3>Piviale di San Valerico</h3>
+          <dl class="project-plan-facts">
+            <div><dt>Datazione</dt><dd>XIII sec. (1250 ca.)</dd></div>
+            <div><dt>Tipologia</dt><dd>Tessile ricamato</dd></div>
+            <div><dt>Museo</dt><dd>Museo del Tesoro del Duomo, Vercelli</dd></div>
+          </dl>
+        </article>
+        <article class="project-plan-card">
+          <h3>Coppa in vetro smaltato</h3>
+          <dl class="project-plan-facts">
+            <div><dt>Datazione</dt><dd>XIV sec. (1330–1360 ca.)</dd></div>
+            <div><dt>Tipologia</dt><dd>Vetro soffiato</dd></div>
+            <div><dt>Museo</dt><dd>Museo Nazionale del Bargello, Firenze</dd></div>
+          </dl>
+        </article>
+      </div>
+
+      <h3>Struttura dei metadati</h3>
+      <p>I metadati di ogni oggetto seguono il formato richiesto da CollectionBuilder-GH, integrato con campi aggiuntivi specifici per le arti decorative medievali.</p>
+      <div class="project-plan-grid project-plan-grid-3">
+        <article class="project-plan-data-card">
+          <code>objectid</code>
+          <p>Identificatore univoco dell'oggetto.</p>
+          <p class="project-plan-example">Esempio: <span>croce-desiderio</span></p>
+        </article>
+        <article class="project-plan-data-card">
+          <code>title</code>
+          <p>Denominazione convenzionale dell'oggetto.</p>
+          <p class="project-plan-example">Esempio: <span>Croce di Desiderio</span></p>
+        </article>
+        <article class="project-plan-data-card">
+          <code>date</code>
+          <p>Anno in formato AAAA.</p>
+          <p class="project-plan-example">Esempio: <span>0825</span></p>
+        </article>
+        <article class="project-plan-data-card">
+          <code>description</code>
+          <p>Descrizione estesa dell'oggetto.</p>
+          <p class="project-plan-example">Esempio: <span>Croce gemmata in lamina d'oro…</span></p>
+        </article>
+        <article class="project-plan-data-card">
+          <code>subject</code>
+          <p>Soggetti e parole chiave.</p>
+          <p class="project-plan-example">Esempio: <span>oreficeria;cammei;gemme</span></p>
+        </article>
+        <article class="project-plan-data-card">
+          <code>location</code>
+          <p>Città del museo di conservazione.</p>
+          <p class="project-plan-example">Esempio: <span>Brescia</span></p>
+        </article>
+        <article class="project-plan-data-card">
+          <code>latitude / longitude</code>
+          <p>Coordinate geografiche del museo.</p>
+          <p class="project-plan-example">Esempio: <span>45.5416 / 10.2118</span></p>
+        </article>
+        <article class="project-plan-data-card">
+          <code>creator</code>
+          <p>Autore o manifattura dell'oggetto.</p>
+          <p class="project-plan-example">Esempio: <span>Maestro longobardo</span></p>
+        </article>
+        <article class="project-plan-data-card">
+          <code>museo</code>
+          <p>Nome esteso del museo.</p>
+          <p class="project-plan-example">Esempio: <span>Museo di Santa Giulia - Brescia</span></p>
+        </article>
+        <article class="project-plan-data-card">
+          <code>materiali</code>
+          <p>Materiali e tecnica di produzione.</p>
+          <p class="project-plan-example">Esempio: <span>Oro; gemme; cammei antichi</span></p>
+        </article>
+        <article class="project-plan-data-card">
+          <code>tipologia</code>
+          <p>Categoria tipologica dell'oggetto.</p>
+          <p class="project-plan-example">Esempio: <span>Oreficeria</span></p>
+        </article>
+        <article class="project-plan-data-card">
+          <code>periodo</code>
+          <p>Periodo storico.</p>
+          <p class="project-plan-example">Esempio: <span>Alto Medioevo (IX sec.)</span></p>
+        </article>
+      </div>
+
+      <h3>Tecnologie adottate</h3>
+      <div class="project-plan-tags">
+        <span class="project-plan-tag">CollectionBuilder-GH</span>
+        <span class="project-plan-tag">GitHub Pages</span>
+        <span class="project-plan-tag">Jekyll</span>
+        <span class="project-plan-tag">Bootstrap 5</span>
+        <span class="project-plan-tag">Leaflet.js</span>
+        <span class="project-plan-tag">CSV / JSON</span>
+      </div>
+
+      <h3>Architettura del sito</h3>
+      <div class="project-plan-grid project-plan-grid-2">
+        <article class="project-plan-structure">
+          <p class="project-plan-wireframe-label">Inizio</p>
+          <div class="project-plan-structure-header">MILLE · Biblioteca digitale di arti decorative medievali italiane</div>
+          <div class="project-plan-structure-nav">Inizio · Esplora · Soggetti · Luoghi · Mappa · Cronologia · Dati · Progetto</div>
+          <div class="project-plan-structure-body">
+            <ul>
+              <li>Hero con oggetto in evidenza</li>
+              <li>Descrizione breve della collezione</li>
+              <li>Statistiche essenziali</li>
+              <li>Oggetti in evidenza con link alle schede</li>
+            </ul>
+          </div>
+        </article>
+        <article class="project-plan-structure">
+          <p class="project-plan-wireframe-label">Esplora</p>
+          <div class="project-plan-structure-header">MILLE · Esplora</div>
+          <div class="project-plan-structure-nav">Filtro per soggetto · Ricerca testuale · Ordinamento</div>
+          <div class="project-plan-structure-body">
+            <ul>
+              <li>Griglia di card con immagine, titolo, data e museo</li>
+              <li>Filtri rapidi per soggetto e formato</li>
+              <li>Collegamento diretto alla pagina del singolo oggetto</li>
+            </ul>
+          </div>
+        </article>
+        <article class="project-plan-structure">
+          <p class="project-plan-wireframe-label">Mappa</p>
+          <div class="project-plan-structure-header">MILLE · Mappa</div>
+          <div class="project-plan-structure-body">
+            <ul>
+              <li>Mappa Leaflet con marker per Brescia, Milano, Vercelli e Firenze</li>
+              <li>Popup con titolo dell'oggetto e link alla scheda</li>
+              <li>Ricerca rapida dei luoghi della collezione</li>
+            </ul>
+          </div>
+        </article>
+        <article class="project-plan-structure">
+          <p class="project-plan-wireframe-label">Scheda oggetto</p>
+          <div class="project-plan-structure-header">MILLE · [Titolo oggetto]</div>
+          <div class="project-plan-structure-nav">Inizio &gt; Esplora &gt; [Titolo]</div>
+          <div class="project-plan-structure-body">
+            <ul>
+              <li>Immagine ad alta risoluzione</li>
+              <li>Metadati completi</li>
+              <li>Collegamenti a soggetti, luoghi e cronologia</li>
+              <li>Link esterno all'istituzione di conservazione</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <p class="project-plan-section-number">04</p>
+      <h2>Piano di Produzione</h2>
+      <div class="project-plan-timeline">
+        <article class="project-plan-timeline-item">
+          <p class="project-plan-phase">Fase 1 · Settimane 1–2</p>
+          <h3 class="project-plan-timeline-title">Ricerca e selezione degli oggetti</h3>
+          <p class="project-plan-timeline-desc">Individuazione dei 4 oggetti da cataloghi museali e letteratura scientifica. Raccolta dei dati catalografici da fonti primarie e verifica delle licenze per le immagini.</p>
+        </article>
+        <article class="project-plan-timeline-item">
+          <p class="project-plan-phase">Fase 2 · Settimane 3–4</p>
+          <h3 class="project-plan-timeline-title">Progettazione e definizione dei metadati</h3>
+          <p class="project-plan-timeline-desc">Definizione della struttura dei metadati, benchmark delle risorse esistenti e redazione del piano di progetto.</p>
+        </article>
+        <article class="project-plan-timeline-item">
+          <p class="project-plan-phase">Fase 3 · Settimane 5–6</p>
+          <h3 class="project-plan-timeline-title">Compilazione del CSV e configurazione</h3>
+          <p class="project-plan-timeline-desc">Compilazione del file <code>mille-metadata.csv</code>, configurazione di <code>_config.yml</code> e personalizzazione del template CollectionBuilder-GH.</p>
+        </article>
+        <article class="project-plan-timeline-item">
+          <p class="project-plan-phase">Fase 4 · Settimana 7</p>
+          <h3 class="project-plan-timeline-title">Redazione dei contenuti</h3>
+          <p class="project-plan-timeline-desc">Scrittura della pagina Progetto, revisione delle descrizioni degli oggetti e raccolta delle immagini definitive.</p>
+        </article>
+        <article class="project-plan-timeline-item">
+          <p class="project-plan-phase">Fase 5 · Settimana 8</p>
+          <h3 class="project-plan-timeline-title">Pubblicazione e test</h3>
+          <p class="project-plan-timeline-desc">Pubblicazione su GitHub Pages e verifica di filtri, mappa, cronologia e pagine individuali su diversi dispositivi.</p>
+        </article>
+        <article class="project-plan-timeline-item">
+          <p class="project-plan-phase">Fase 6 · Settimane 9–10</p>
+          <h3 class="project-plan-timeline-title">Revisione finale</h3>
+          <p class="project-plan-timeline-desc">Correzione degli errori, completamento della documentazione e preparazione della presentazione finale.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <p class="project-plan-section-number">05</p>
+      <h2>Usabilità e Accessibilità</h2>
+      <div class="project-plan-grid project-plan-grid-2">
+        <article class="project-plan-card">
+          <h3>Navigazione multipla</h3>
+          <p>L'utente può raggiungere gli oggetti tramite griglia, mappa, cronologia, soggetti e luoghi.</p>
+        </article>
+        <article class="project-plan-card">
+          <h3>Layout responsive</h3>
+          <p>Bootstrap 5 garantisce adattamento coerente su mobile, tablet e desktop.</p>
+        </article>
+        <article class="project-plan-card">
+          <h3>Dati aperti</h3>
+          <p>I metadati sono disponibili in CSV e JSON nella sezione Dati, favorendo riuso e interoperabilità.</p>
+        </article>
+        <article class="project-plan-card">
+          <h3>Accessibilità</h3>
+          <p>Markup semantico, immagini con <code>alt</code>, buon contrasto cromatico e navigazione da tastiera supportata.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <p class="project-plan-section-number">06</p>
+      <h2>Disseminazione e Preservazione</h2>
+      <div class="project-plan-grid project-plan-grid-2">
+        <article class="project-plan-card">
+          <h3>Pubblicazione</h3>
+          <p>Il sito è pubblicato su GitHub Pages con repository pubblico e codice versionato.</p>
+        </article>
+        <article class="project-plan-card">
+          <h3>Preservazione</h3>
+          <p>Architettura statica, repository Git come archivio versionato e metadati conservati in formato CSV aperto.</p>
+        </article>
+        <article class="project-plan-card">
+          <h3>Interoperabilità</h3>
+          <p>Compatibilità con standard ICCD, export CSV/JSON e possibilità futura di arricchimento con JSON-LD e Schema.org.</p>
+        </article>
+        <article class="project-plan-card">
+          <h3>Sviluppi futuri</h3>
+          <p>Espansione ad altri musei, collegamenti a Europeana e integrazione di immagini ad alta risoluzione con IIIF.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <p class="project-plan-section-number">07</p>
+      <h2>Testing e Promozione</h2>
+      <div class="project-plan-grid project-plan-grid-2">
+        <article class="project-plan-card">
+          <h3>Validazione HTML</h3>
+          <p>W3C Markup Validator per verificare l'assenza di errori nel codice generato.</p>
+        </article>
+        <article class="project-plan-card">
+          <h3>Responsive design</h3>
+          <p>Chrome DevTools per controllare il rendering su mobile, tablet e desktop.</p>
+        </article>
+        <article class="project-plan-card">
+          <h3>Funzioni interattive</h3>
+          <p>Test manuale di mappa, cronologia, filtri e collegamenti alle schede dei singoli oggetti.</p>
+        </article>
+        <article class="project-plan-card">
+          <h3>Accessibilità</h3>
+          <p>WAVE Accessibility Tool per verificare l'aderenza alle linee guida WCAG 2.1 livello AA.</p>
+        </article>
+      </div>
+      <p>Trattandosi di un progetto didattico, la promozione è limitata alla condivisione del link GitHub con il docente e con i colleghi del corso. Il repository pubblico permette comunque di consultare il codice sorgente e i metadati come esempio per progetti simili.</p>
+    </section>
+
+    {{ content }}
+  </div>
+</div>
